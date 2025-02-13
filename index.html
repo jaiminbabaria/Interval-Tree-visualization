@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/sigma@1.2.1/build/sigma.min.js"></script>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        #tree-container {
+          width: 90%;
+          height: 500px;
+          border-style: solid;
+          border-width: 1px;
+          border-color: black;
+          border-radius: 10px; 
+          margin: auto;
+        }
+        #btn{
+            width: 20px;
+            padding: 5px;
+            margin: 10px;
+
+        }
+        .container{
+            background: linear-gradient(#e66465, #9198e5);              
+            border: 1px solid black;
+            width: 90%;
+            height: 110px;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px; 
+        }
+        button{
+            padding: 4px;
+            margin: 10px;
+            border-radius: 4px;
+            background-color: black;
+            color: white;
+        }
+
+        #inp{
+            margin:5px;
+            padding: 4px;
+            border: 2px solid red;
+            border-radius: 4px;
+
+        }
+    </style>
+    <title>Interval Tree2</title>
+</head>
+<body>
+
+    <div class="container">
+        <center>
+            <div class="heading">
+                <h1>Interval tree visualization</h1>
+                <hr>
+            </div>
+            <br>
+            <input id="inp" type="text" placeholder="Enter Intervals">
+            <input id="inpFind" type="text" placeholder="Enter number">
+            <button id="btnAdd" onclick="insert()">Add Intervals</button>
+            <button id="btnFind" onclick="find_intervals()">Find</button>
+        </center>
+    </div>
+    <!-- <input type="text" id="txtInput" value=""> -->
+    
+    <br>
+    <div id="tree-container"></div>
+    <br>
+    <center>
+    <h3>Output of Find interval</h3>
+    <p id="notes"></p>
+    </center>
+    <!-- <script src="scapeGoat.js"></script> -->
+    <script src="main.js"></script>
+</body>
+</html>
